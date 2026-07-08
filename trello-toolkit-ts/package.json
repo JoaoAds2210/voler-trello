@@ -1,0 +1,30 @@
+{
+  "name": "trello-toolkit-ts",
+  "version": "1.0.0",
+  "description": "Kit de funções em TypeScript para um agente interagir com a API REST do Trello.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fn:get-card": "functions-framework --source=functions/get-card --target=getCard --port=8081",
+    "fn:post-comment": "functions-framework --source=functions/post-comment --target=postComment --port=8082",
+    "fn:set-card-labels": "functions-framework --source=functions/set-card-labels --target=setCardLabels --port=8083",
+    "fn:move-card-to-list": "functions-framework --source=functions/move-card-to-list --target=moveCardToList --port=8084",
+    "fn:set-checklist-item-state": "functions-framework --source=functions/set-checklist-item-state --target=setChecklistItemState --port=8085"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^5.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "cross-env": "^7.0.3",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4"
+  }
+}
+
+
+
